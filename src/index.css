@@ -34,7 +34,7 @@ code {
 .container {
   margin: auto;
   background: var(--calculator);
-  width: 30rem;
+  width: 25rem;
   height: 30rem;
   box-shadow: 0.6rem 0.6rem 4px black;
   padding: 1rem;

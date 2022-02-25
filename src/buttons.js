@@ -9,7 +9,7 @@ const Buttons = () => {
   const checkOperation = useCallback(() => {
     const regex = /^\D|^0/;
     const value = operation.replace(regex, "");
-    const duplicateRegex = /[\D]([\D])/;
+    const duplicateRegex = /[\D]([\D])|([\D])0\d/;
     setOperation(value.replace(duplicateRegex, "$1"));
     setResult(result.replace(duplicateRegex, "$1"));
   }, [operation, result, setOperation, setResult]);
