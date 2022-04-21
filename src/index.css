@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap");
+
 :root {
-  --background-color: #f5f587;
-  --calculator: #817e7e;
+  --background-color: #0004;
+  --calculator: #0008;
   --display: #111111;
   --btn-background: #aaaaaa;
   --functions: #f3effa;
@@ -16,6 +18,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 code {
@@ -34,12 +37,12 @@ code {
 .container {
   margin: auto;
   background: var(--calculator);
-  width: 25rem;
-  height: 30rem;
-  box-shadow: 0.6rem 0.6rem 4px black;
+  width: 23rem;
+  height: 33rem;
   padding: 1rem;
   border-radius: 10%;
-  border: solid 2px black;
+  border: solid 5px white;
+  box-shadow: 0 0 10px black;
 }
 
 /* display */
@@ -51,6 +54,7 @@ code {
   width: 80%;
   display: flex;
   align-items: center;
+  border-radius: 10px;
 }
 
 #display {
